@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        header{
+            width: 30%;
+            height: 80vh;
+            background-color: white;
+            padding: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EVENTS PAGE</h1>
+        <p>Click here to go to the welcome page</p>
+
+        <form action="#">
+            <label for="text">Event Name:</label>
+            <input type="text">
+
+            <label for="sport">Sports:</label>
+            <select name="sport" id="sport">
+                <option value="basebal">Baseball</option>
+                <option value="football">Football</option>
+                <option value="tenis">Tenis</option>
+            </select>
+
+            <label for="street">Location:</label>
+            <select name="street" id="street">
+                <option value="1street">1st Street</option>
+                <option value="2street">2st Street</option>
+                <option value="3street">3st Street</option>
+             </select>
+
+            <label for="datetime-local">Time:</label>
+            <input type="datetime-local">
+
+            <label for="">Number of Players</label>
+            <input type="number">
+
+            <label for="">Minumum Age</label>
+            <input type="number">
+
+            <label for="">Maxsimum Age</label>
+            <input type="number">
+            <div class="container">
+            <label for="">Minimum skill Level</label><br>   
+            <input type="radio"><label for="radio">1</label>
+            <input type="radio"><label for="radio">2</label>
+            <input type="radio"><label for="radio">3</label>
+            <input type="radio"><label for="radio">4</label>
+            <input type="radio"><label for="radio">5</label>
+            </div>
+            
+            <div class="container">
+            <label for="">Miximum skill Level</label><br>
+            <input type="radio"><label for="radio">1</label>
+            <input type="radio"><label for="radio">2</label>
+            <input type="radio"><label for="radio">3</label>
+            <input type="radio"><label for="radio">4</label>
+            <input type="radio"><label for="radio">5</label>
+            </div>
+            
+
+            <p>Creator: Anorkhulov</p>
+            <input type="button" value="Send">
+
+
+        </form>
+
+    </header>
+</body>
+</html>

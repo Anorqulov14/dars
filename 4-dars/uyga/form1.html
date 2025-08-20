@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        label {
+            display: flex;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 300px;
+            padding: 8px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+  </head>
+  <body>
+      <h1>Setup your account</h1>
+      <p>
+        Make sure to use a valid email address,you'll need to verify it before
+        you can send any campaigns.
+      </p>
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option>United States of America</option>
+            <option>Uzbekistan</option>
+            <option>United Kingdom</option>
+        </select>
+
+        <label for="timezone">Timezone</label>
+        <select id="timezone" name="timezone">
+            <option>(GMT-06:00) Central America</option>
+            <option>(GMT+05:00) Tashkent</option>
+            <option>(GMT+00:00) London</option>
+        </select>
+    </form>
+  </body>
+</html>

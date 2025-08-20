@@ -1,0 +1,12 @@
+.container{
+    background-color: rgb(59, 59, 233);
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.container div{
+    background-color: lightslategrey;
+    padding: 20px;
+}
