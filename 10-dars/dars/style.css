@@ -1,0 +1,61 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+header > nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header>nav>div {
+    display: flex;
+    gap: 5px;
+}
+
+header > ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    gap: 65px;
+}
+
+section {
+  width: 100%;
+    display: flex;
+}
+
+.section1 {
+    position: relative; /* чтобы absolute у img работало внутри */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.section1 > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;   /* растянуть как фон */
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.section1 > div {
+    position: relative;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white; /* чтобы текст был виден на фоне */
+}
