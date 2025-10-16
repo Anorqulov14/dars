@@ -15,14 +15,14 @@ body{
 }
 .container{
     width: 400px;
-    height: 500px;
+    height: 470px;
     background-color: #080a36;
     padding: 20px;
     border-radius: 10px;
 }
 form{
-    height: 300px;
-    color: white;
+    height: 400px;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,6 +41,8 @@ input{
     width: 100%;
     height: 40px;
     border-radius: 5px;
+    color: black;
+    padding: 10px;
 }
 .footer{
     height: 120px;
