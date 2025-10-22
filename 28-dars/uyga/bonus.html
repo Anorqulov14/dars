@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h1>Qoshish</h1>
+    <input type="text" />
+    <button class="botton">qosh</button>
+
+    <br /><br />
+    <ol class="ol"></ol>
+
+    <script>
+      let input = document.querySelector("input");
+      let button = document.querySelector(".botton");
+      let ol = document.querySelector(".ol");
+
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        let value = input.value;
+        if (value === "") {
+          alert("Bosh kiritildi")
+          input.value = "";
+        } else {
+          let li = document.createElement("li");
+          let del = document.createElement("button")
+          del.textContent = "❌"
+          li.textContent = value;
+          li.textContent = value + " ";
+          li.appendChild(del);
+          ol.appendChild(li);
+          del.addEventListener("click", () => {
+            li.remove();
+          });
+          input.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>

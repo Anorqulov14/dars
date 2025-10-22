@@ -1,0 +1,30 @@
+<input type="password" id="password" placeholder="Parol kiriting">
+<p id="status"></p>
+
+<script>
+const password = document.querySelector("#password")
+const statusText = document.querySelector("#status")
+
+password.addEventListener("input", () => {
+  let pass = password.value.trim()
+  let kuch = 0
+
+
+  if (pass.length >= 8) kuch++
+  if (pass.match(/[0-9]/)) kuch++       
+  if (pass.match(/[a-z]/)) kuch++        
+  if (pass.match(/[A-Z]/)) kuch++        
+  if (pass.match(/[^a-zA-Z0-9]/)) kuch++ 
+
+  if (kuch <= 2) {
+    statusText.innerText = "Kuchsiz parol"
+    statusText.style.color = "red"
+  } else if (kuch === 3 || kuch === 4) {
+    statusText.innerText = "Orta parol"
+    statusText.style.color = "orange"
+  } else {
+    statusText.innerText = "Kuchli parol"
+    statusText.style.color = "green"
+  }
+})
+</script>

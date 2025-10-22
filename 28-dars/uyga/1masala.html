@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" class="form">
+        <label for="son1">1-sonni tanlang:</label>
+        <input type="number" class="son1">
+        <label for="son2">2-sonni tanlang:</label>
+        <input type="number" class="son2">
+        <label for="amal">Amal tanlang:</label>
+        <select id="amal" name="amal">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button type="submit" class="button">submit</button>
+        <button type="reset" class="reset">reset</button>
+    </form>
+
+    <p class="natija">Natija : 0</p>
+    
+    <script>
+        const form = document.querySelector(".form")
+        let input1 = form.querySelector(".son1")
+        let input2 = form.querySelector(".son2")
+        let amalla = form.querySelector("#amal")
+        let button = form.querySelector(".button")
+        let p = document.querySelector(".natija")
+        
+        button.addEventListener("click",event =>{
+            event.preventDefault()
+            let a = input1.value.trim()
+            let b = input2.value.trim()
+            let amal = amalla.value
+            a = Number(a)
+            b = Number(b)
+            if (a === "" || b === "") {
+                p.textContent = "Iltimos, ikkala sonni ham kiriting"
+                p.style.color = "red"
+                return
+            }
+            if (amal === "/" && b === 0) {
+                p.textContent = "0 ga bolish mumkin emas"
+                p.style.color = "red"
+                return
+            }
+            switch (amal) {
+                case "+":
+                    p.textContent = a+b
+                    break;
+                case "-":
+                    p.textContent = a-b
+                    break;
+                case "*":
+                    p.textContent = a*b
+                    break;
+                case "/":
+                    p.textContent = a/b
+                    break;
+            }
+        })
+        
+    </script>
+</body>
+</html>
