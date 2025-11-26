@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 30%;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.searchContainer > input {
+    padding: 5px 30px;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    font-family: cursive;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.searchContainer > input:hover {
+    padding: 10px;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    font-family: cursive;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    transform: scale(1.05);
+}
+
+.searchContainer > button{
+    width: 60px;
+    height: 36px;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 5px gainsboro;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.searchContainer > button:hover{
+    width: 60px;
+    height: 36px;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 5px gainsboro;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;  
+}
+
+.getProduct{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+img{
+    width: 100%;
+    height: 300px; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.iteamProduct{
+    width: 30%;
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.iteamProduct:hover{
+    width: 30%;
+    height: auto;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: relative; 
+}
+
+.namePrise{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+
+.addProduct{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 5%;
+    padding: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.addProduct > form{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.addProduct > h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.addProduct > p{
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+.addProduct >form > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons > button{
+    width: 45%;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightskyblue;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.buttons > button:hover{
+    width: 45%;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightskyblue;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.addBtn{
+    width: 60px;
+    height: 36px;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 5px gainsboro;
+    transition: all 0.3s ease;
+}
+
+.addBtn:hover{
+    width: 60px;
+    height: 36px;
+    border: none;
+    border-radius: 10%;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 5px 5px 5px gainsboro;
+    transform: scale(1.05);
+}
+
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete{
+    width: 47%;
+    height: 30px;
+    background-color: rgb(191, 78, 78);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.rename{
+    color: black;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 47%;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+

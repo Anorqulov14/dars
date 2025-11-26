@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section class="container">
+        <div class="modalArea">
+            <div class="modal hidden">
+                    <form class="modal_form">
+                        <p class="modal_exit">❌</p>
+                        <h1>New product</h1>
+                        <input type="text" placeholder="Enter name" id="name">
+                        <input type="number" placeholder="Enter price" id="price">
+                        <input type="text" placeholder="Enter image" id="image">
+                        <textarea name="description" id="description" placeholder="Enter description" rows="8"></textarea>
+                        <div class="buttons">
+                            <button type="submit" class="addSubmit">Submit</button>
+                        <button type="reset" class="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+        <div class="modal2 hidden2">
+                    <form class="modal_form2">
+                        <p class="modal_exit2">❌</p>
+                        <h1>Rename product</h1>
+                        <input type="text" placeholder="Enter name" id="name2">
+                        <input type="number" placeholder="Enter price" id="price2">
+                        <input type="text" placeholder="Enter image" id="image2">
+                        <textarea name="description" id="description2" placeholder="Enter description" rows="8"></textarea>
+                        <div class="buttons2">
+                            <button type="submit" class="readSubmit">Submit</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+             </div>
+            
+        <header>
+            <div class="logo">
+                START
+            </div>
+            <div class="menu">
+                <div class="search">
+                    <input type="text" placeholder="search" class="searchInput">
+                    <p>🔍</p>
+                </div>
+                <button type="submit" class="searchBtn" style="width: 100px; padding: 0; height: 36px; font-size: 22px;">Search</button>
+                <button class="addProduct">+</button>
+            </div>
+        </header>
+                
+        <main>
+            <h1>Products</h1>
+            <section class="products">
+            </section>
+            
+        </main>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>

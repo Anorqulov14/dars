@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px 50px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px 5px beige;
+}
+
+header{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.search{
+    display: flex;
+    position: relative;
+}
+.search > input {
+    padding: 5px 30px;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    font-family: cursive;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    transition: all 0.3s ease;
+}
+
+.search > input:hover {
+    padding: 5px 30px;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    font-family: cursive;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    transform: scale(1.05);
+}
+
+
+.search>p{
+    position: absolute;
+    left: 5px;
+    top: 7px;
+}
+
+.menu{
+    height: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.menu > button {
+    background-color: lightskyblue;
+    padding: 5px 35px;
+    border: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px lightblue;
+    transition: all 0.3s ease; 
+}
+
+.menu > button:hover{
+    cursor: pointer;
+    background-color: rgb(37, 37, 151);
+    transform: scale(1.05); 
+}
+
+.products{
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    gap: 30px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.modal{
+    width: 500px;
+    height: 630px;
+    position: absolute;
+    z-index: 1;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8%;
+}
+
+.modal>form>h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal > form > p{
+    width: 20px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 95%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal>form>input,textarea{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modalArea{
+    width: 90%;
+    height: 90vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.addSubmit{
+    width: 47%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(57, 57, 162);
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.reset{
+    width: 47%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(191, 78, 78);
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+.delete{
+    width: 47%;
+    height: 30px;
+    background-color: rgb(191, 78, 78);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.rename{
+    color: black;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 47%;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.cards {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: gainsboro;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 12px;
+}
+
+.cards:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
+}
+
+
+.loading{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.modal2{
+    width: 500px;
+    height: 630px;
+    position: absolute;
+    z-index: 1;
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8%;
+    display: none;
+}
+
+.modal2>form>h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal2 > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal2 > form > p{
+    width: 20px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: 95%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal2>form>input,textarea{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modalArea2{
+    width: 90%;
+    height: 90vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buttons2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.readSubmit{
+    width: 47%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(57, 57, 162);
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+
+
